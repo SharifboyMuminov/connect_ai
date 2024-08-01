@@ -55,9 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
       messages.insert(0, chatMessage);
     });
 
-    gemini
-        .streamGenerateContent(chatMessage.text)
-        .listen((value) {
+    gemini.streamGenerateContent(chatMessage.text).listen((value) {
       messages.insert(
         0,
         ChatMessage(
@@ -65,10 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
           createdAt: DateTime.now(),
           text: value.output ?? "",
         ),
-
       );
       setState(() {});
-
     }).onError((e) {});
   }
 }
