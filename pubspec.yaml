@@ -38,6 +38,8 @@ dependencies:
   flutter_screenutil: ^5.9.3
   dash_chat_2: ^0.0.21
   flutter_gemini: ^2.0.4
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
