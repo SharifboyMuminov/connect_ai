@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gemini_connect/utils/app_consts.dart';
-
-import 'screens/home_screen/home_screen.dart';
+import 'package:gemini_connect/data/local/storage_repository.dart';
+import 'package:gemini_connect/screens/splash/splash_screen.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  Gemini.init(apiKey: AppConsts.geminiApiKey);
 
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+  StorageRepository.instance;
 
   runApp(const MyApp());
 }
@@ -34,7 +31,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: HomeScreen(),
+      child: const SplashScreen(),
     );
   }
 }

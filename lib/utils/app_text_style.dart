@@ -2,44 +2,42 @@ import 'package:flutter/material.dart';
 import 'package:gemini_connect/utils/app_colors.dart';
 
 class AppTextStyle {
-  // SeoulNamsan
-  static TextStyle seoulNamsanThin = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratThin = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w200,
     color: AppColors.black,
   );
-  static TextStyle seoulNamsanLight = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratLight = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w300,
     color: AppColors.black,
   );
-  static TextStyle seoulNamsanRegular = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratRegular = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w400,
     color: AppColors.black,
   );
-  static TextStyle seoulNamsanMedium = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratMedium = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w500,
     color: AppColors.black,
   );
 
-  static TextStyle seoulNamsanSemiBold = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratSemiBold = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w600,
     color: AppColors.black,
   );
 
-  static TextStyle seoulNamsanBold = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratBold = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w700,
     color: AppColors.black,
   );
 
-  static TextStyle seoulNamsanBlack = const TextStyle(
-    fontFamily: "Roboto",
+  static TextStyle montserratBlack = const TextStyle(
+    fontFamily: "Montserrat",
     fontWeight: FontWeight.w800,
     color: AppColors.black,
   );
-
 }

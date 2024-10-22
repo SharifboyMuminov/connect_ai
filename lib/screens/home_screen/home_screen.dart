@@ -15,11 +15,12 @@ class _HomeScreenState extends State<HomeScreen> {
   List<ChatMessage> messages = [];
   final gemini = Gemini.instance;
 
+
   final ChatUser geminiAi = ChatUser(
     id: "gemini",
     lastName: "Gemini",
     profileImage:
-        "https://seeklogo.com/images/G/google-gemini-logo-A5787B2669-seeklogo.com.png",
+    "https://seeklogo.com/images/G/google-gemini-logo-A5787B2669-seeklogo.com.png",
   );
 
   final ChatUser user = ChatUser(
@@ -27,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     lastName: "Sharifjon",
     firstName: "Muminov",
     profileImage:
-        "https://i.etsystatic.com/38615118/r/il/c9cef0/5983835163/il_570xN.5983835163_fuu7.jpg",
+    "https://i.etsystatic.com/38615118/r/il/c9cef0/5983835163/il_570xN.5983835163_fuu7.jpg",
   );
 
   @override
@@ -37,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         title: Text(
           "Gemini Chat",
-          style: AppTextStyle.seoulNamsanMedium.copyWith(
+          style: AppTextStyle.montserratMedium.copyWith(
             fontSize: 18.sp,
           ),
         ),
@@ -65,6 +66,8 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       );
       setState(() {});
-    }).onError((e) {});
+    }).onError((e) {
+      debugPrint("Error $e ---------------");
+    });
   }
 }
